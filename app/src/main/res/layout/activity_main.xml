@@ -4,34 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mijailrivera.mialbumpanini.MainActivity"
-    android:orientation="vertical">
+    tools:context="com.example.mijailrivera.mialbumpanini.MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <GridView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/gridview"
+        android:orientation="horizontal"
+        android:id="@+id/linBoton">
+        <Button
+            android:id="@+id/btnGuardar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:columnWidth="40dp"
-            android:numColumns="auto_fit"
-            android:verticalSpacing="10dp"
-            android:horizontalSpacing="0dp"
-            android:stretchMode="columnWidth"
-            android:gravity="center">
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:layout_weight="1"/>
 
-        </GridView>
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Borrar"
+            android:layout_weight="1"/>
     </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="40dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="0dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_below="@+id/linBoton"
+        tools:ignore="UnknownId" />
+
+
+
 </RelativeLayout>

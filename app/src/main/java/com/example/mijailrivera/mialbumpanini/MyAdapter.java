@@ -33,11 +33,13 @@ public class MyAdapter extends ArrayAdapter<String> {
             tv = (TextView) convertView;
         }
         tv.setText(objects[position]);
+        tv.setBackgroundColor(Color.WHITE);
+        /*
         if (position % 2 == 0)
             tv.setBackgroundColor(Color.GREEN);
         else
             tv.setBackgroundColor(Color.WHITE);
-
+        */
         return tv;
     }
 }
