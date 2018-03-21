@@ -25,20 +25,28 @@
             android:text="Borrar"
             android:layout_weight="1"/>
     </LinearLayout>
-
-    <GridView
-        android:id="@+id/gridview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnWidth="40dp"
-        android:numColumns="auto_fit"
-        android:verticalSpacing="10dp"
-        android:horizontalSpacing="0dp"
-        android:stretchMode="columnWidth"
-        android:gravity="center"
-        android:layout_below="@+id/linBoton"
-        tools:ignore="UnknownId" />
-
-
+    <!--
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="40dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="0dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:layout_below="@+id/linBoton"
+            tools:ignore="UnknownId"
+            />
+    -->
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linBoton"
+            android:numColumns="3"
+            android:scrollbars="none"
+            />
 
 </RelativeLayout>

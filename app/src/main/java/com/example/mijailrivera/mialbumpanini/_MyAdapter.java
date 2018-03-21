@@ -11,12 +11,12 @@ import android.widget.TextView;
  * Created by MIJAIL RIVERA on 15/03/2018.
  */
 
-public class MyAdapter extends ArrayAdapter<String> {
+public class _MyAdapter extends ArrayAdapter<String> {
 
     String[] objects;
     Context context;
 
-    public MyAdapter(Context context, int textViewResourceId, String[] objects) {
+    public _MyAdapter(Context context, int textViewResourceId, String[] objects) {
         super(context, textViewResourceId, objects);
         this.context = context;
         this.objects = objects;
